@@ -15,7 +15,7 @@ public class CountUserMsgDriver {
         }
         Job job = new Job();
         job.setJarByClass(project1.CountUserMsgDriver.class);
-        job.setJobName("Count TweetsbyUsr");
+        job.setJobName("Count TweetsbyUser");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));

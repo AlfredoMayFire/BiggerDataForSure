@@ -17,7 +17,7 @@ public class TwitterKeyWordDriver {
         }
         Job job = new Job();
         job.setJarByClass(project1.TwitterKeyWordDriver.class);
-        job.setJobName("Count TweetsbyUsr");
+        job.setJobName("Count TweetsbyUser");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
