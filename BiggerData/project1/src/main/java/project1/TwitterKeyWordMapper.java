@@ -21,22 +21,22 @@ public class TwitterKeyWordMapper extends Mapper<LongWritable, Text, Text, IntWr
             if (tweet.contains("TRUMP")){
                 context.write(new Text("TRUMP"), new IntWritable(1));
             }
-            else if (tweet.contains("Flu")){
+            if (tweet.contains("Flu")){
                 context.write(new Text("Flu"), new IntWritable(1));
             }
-            else if (tweet.contains("Zika")){
+            if (tweet.contains("Zika")){
                 context.write(new Text("Zika"), new IntWritable(1));
             }
-            else if (tweet.contains("Diarrhea")){
+            if (tweet.contains("Diarrhea")){
                 context.write(new Text("Diarrhea"), new IntWritable(1));
             }
-            else if (tweet.contains("Ebola")){
+            if (tweet.contains("Ebola")){
                 context.write(new Text("Ebola"), new IntWritable(1));
             }
-            else if (tweet.contains("Headache")){
+            if (tweet.contains("Headache")){
                 context.write(new Text("Headache"), new IntWritable(1));
             }
-            else if (tweet.contains("Measles")){
+            if (tweet.contains("Measles")){
                 context.write(new Text("Measles"), new IntWritable(1));
             }
         }
