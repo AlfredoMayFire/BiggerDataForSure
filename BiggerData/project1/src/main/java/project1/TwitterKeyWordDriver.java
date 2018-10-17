@@ -19,7 +19,7 @@ public class TwitterKeyWordDriver {
         job.setJarByClass(project1.TwitterKeyWordDriver.class);
         job.setJobName("Count TweetsbyUser");
 
-        FileInputFormat.addInputPath(job, new Path("hadoop-2.7.5/"+args[0]));
+        FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         job.setMapperClass(project1.TwitterKeyWordMapper.class);
