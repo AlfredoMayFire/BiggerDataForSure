@@ -16,14 +16,14 @@ public class TwitterKeyWordDriver {
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(p1.TwitterKeyWordDriver.class);
+        job.setJarByClass(project1.TwitterKeyWordDriver.class);
         job.setJobName("Count TweetsbyUser");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(p1.TwitterKeyWordMapper.class);
-        job.setReducerClass(p1.TwitterKeyWordReducer.class);
+        job.setMapperClass(project1.TwitterKeyWordMapper.class);
+        job.setReducerClass(project1.TwitterKeyWordReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

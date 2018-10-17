@@ -14,14 +14,14 @@ public class CountUserMsgDriver {
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(p1.CountUserMsgDriver.class);
+        job.setJarByClass(project1.CountUserMsgDriver.class);
         job.setJobName("Count TweetsbyUser");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(p1.CountUserMsgMapper.class);
-        job.setReducerClass(p1.CountUserMsgReducer.class);
+        job.setMapperClass(project1.CountUserMsgMapper.class);
+        job.setReducerClass(project1.CountUserMsgReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
