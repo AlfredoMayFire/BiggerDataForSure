@@ -21,7 +21,7 @@ public class CountUserMsgReducer extends Reducer<Text, Text, Text, Text> {
         }
 
         String stringCount = Integer.toString(count);
-        completeMsgcompleteMsg = completeMsg.concat("" + stringCount);
+        completeMsg = completeMsg.concat("" + stringCount);
         context.write(key, new Text(completeMsg));
     }
 }
