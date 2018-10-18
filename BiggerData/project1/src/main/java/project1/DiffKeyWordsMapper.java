@@ -56,8 +56,6 @@ public class DiffKeyWordsMapper extends Mapper<LongWritable, Text, Text, IntWrit
                     context.write(new Text(e.replace("\"", "")), new IntWritable(1));
                 }
             }
-        } catch (TwitterException e) {
-
-        }
+        } catch (TwitterException e) {}
     }
 }
