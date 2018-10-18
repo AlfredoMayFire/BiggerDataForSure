@@ -19,7 +19,7 @@ public class DiffKeyWordsMapper extends Mapper<LongWritable, Text, Text, IntWrit
         try {
             Status status = TwitterObjectFactory.createStatus(rawTweet);
             String keywords = status.getText().toUpperCase();
-            keywords.replaceAll("[^a-z ]","");
+            keywords.replaceAll("^[a-z ]","");
 
             String[] keywordSplit = keywords.split("\\s+");
 
