@@ -20,8 +20,8 @@ public class UniqueNameDriver {
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(Mapper.UniqueNameMapper.class);
-        job.setReducerClass(Reducer.UniqueNameReducer.class);
+        job.setMapperClass(project1.UniqueNameMapper.class);
+        job.setReducerClass(project1.UniqueNameReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
