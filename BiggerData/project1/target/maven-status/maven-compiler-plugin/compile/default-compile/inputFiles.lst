@@ -1,0 +1,15 @@
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/UniqueNameDriver.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/CountUserMsgDriver.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/DiffKeyWordsMapper.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/UniqueNameMapper.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/RepliesMapper.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/RepliesReducer.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/CountUserMsgMapper.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/UniqueNameReducer.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/CountUserMsgReducer.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/TwitterKeyWordDriver.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/DiffKeyWordsReducer.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/TwitterKeyWordMapper.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/DiffKeyWordsDriver.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/RepliesDriver.java
+/home/alfredo_pomales/hadoop-2.7.5/BiggerDataForSure/BiggerData/project1/src/main/java/project1/TwitterKeyWordReducer.java
