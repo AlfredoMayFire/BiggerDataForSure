@@ -14,14 +14,14 @@ public class DiffKeyWordsDriver {
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(project1.StopWordsDriver.class);
+        job.setJarByClass(project1.DiffKeyWordsDriver.class);
         job.setJobName("Count TweetsbyUsr");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(project1.StopWordsMapper.class);
-        job.setReducerClass(project1.StopWordsReducer.class);
+        job.setMapperClass(project1.DiffKeyWordsMapper.class);
+        job.setReducerClass(project1.DiffKeyWordsReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
