@@ -13,9 +13,9 @@ public class RepliesReducer extends Reducer<LongWritable, Text, LongWritable, Te
             throws IOException, InterruptedException {
 
         String allIds = " ";
-        System.out.println("Key: " + key);
+        //System.out.println("Key: " + key);
         for (Text value : values){
-            System.out.println(value.toString());
+            // System.out.println(value.toString());
             allIds = allIds.concat(value.toString()) + " ";
         }
         context.write(key, new Text(allIds));

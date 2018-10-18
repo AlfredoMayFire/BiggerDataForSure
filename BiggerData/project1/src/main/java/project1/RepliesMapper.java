@@ -25,7 +25,7 @@ public class RepliesMapper extends Mapper<LongWritable, Text, LongWritable, Text
             if(msgReplied2Id != -1){
                 String replyingMsgIdString;
                 replyingMsgIdString = Long.toString(replyMsgId);
-                System.out.println("Key: " + msgReplied2Id);
+                // System.out.println("Key: " + msgReplied2Id);
                 context.write(new LongWritable(msgReplied2Id), new Text(replyingMsgIdString));
             }
         }
