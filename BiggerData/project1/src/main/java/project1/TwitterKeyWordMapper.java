@@ -42,3 +42,4 @@ public class TwitterKeyWordMapper extends Mapper<LongWritable, Text, Text, IntWr
         }
         catch(TwitterException e){}
 }
+}
