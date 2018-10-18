@@ -21,8 +21,8 @@ public class CountUserMsgMapper extends Mapper<LongWritable, Text, Text, Text> {
             User user = status.getUser();
             String screenName = user.getScreenName();
             String stringMsgId = Long.toString(msgID);
-            System.out.println(screenName);
-            System.out.println(stringMsgId);
+            // System.out.println(screenName);
+            // System.out.println(stringMsgId);
             context.write(new Text(screenName), new Text(stringMsgId));
         }
         catch(TwitterException e) {}

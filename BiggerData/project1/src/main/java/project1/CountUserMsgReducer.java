@@ -17,7 +17,7 @@ public class CountUserMsgReducer extends Reducer<Text, Text, Text, Text> {
         for (Text value : values){
             completeMsg = completeMsg.concat(value.toString()) + " ";
             count = count + 1;
-            System.out.println(count);
+            // System.out.println(count);
         }
 
         String stringCount = Integer.toString(count);
