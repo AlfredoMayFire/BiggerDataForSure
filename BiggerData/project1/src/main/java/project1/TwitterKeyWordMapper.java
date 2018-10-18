@@ -40,4 +40,5 @@ public class TwitterKeyWordMapper extends Mapper<LongWritable, Text, Text, IntWr
                 context.write(new Text("MEASLES"), new IntWritable(1));
             }
         }
+        catch(TwitterException e){}
 }
