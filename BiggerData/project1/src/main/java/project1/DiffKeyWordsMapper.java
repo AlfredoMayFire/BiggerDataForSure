@@ -4,6 +4,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Mapper.Context;
 import twitter4j.Status;
 import twitter4j.TwitterException;
 import twitter4j.TwitterObjectFactory;
@@ -18,8 +19,8 @@ public class DiffKeyWordsMapper extends Mapper<LongWritable, Text, Text, IntWrit
 
         try {
             Status status = TwitterObjectFactory.createStatus(rawTweet);
-            String keywords = status.getText().toUpperCase();
-            keywords.replaceAll("[^A-Z ]","");
+            String keywords = status.getText().toUpperCase().replaceAll("[^A-Z ]", "");
+
 
             String[] keywordSplit = keywords.split("\\s+");
 
